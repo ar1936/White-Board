@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+
+    <!-- this is for top file name -->
+
+    <div class="upper">
+        <div class="boardname">Board Name</div>
+        <button class="database">
+        </button>
+    </div>
+
+    <div class="modal">
+        <div class="modalhead"></div>
+        <div class="entertext">Enter Board Name :-</div>
+        <div class="boardnameinput">
+            <input type="text" class="inputboard">
+        </div>
+        <div class="okbtn">
+            <button class="ok">Ok</button>
+        </div>
+    </div>
+
+
+     
+    <div class="main">
+
+
+        <div class="tool-bar">
+
+            <!-- for pen -->
+
+            <div class="action-btn active">
+                <i class="fas fa-pen icon pencil"></i>
+                <div class="pen-options">
+                    <i class="fas fa-circle iconcircle"></i>
+                    <div class="thickness">
+                        <i class="fas fa-circle" size="2" style="font-size:x-small;"></i>
+                        <i class="fas fa-circle" size="4" style="font-size:small;"></i>
+                        <i class="fas fa-circle" size="6" style="font-size: medium;"></i>
+                        <i class="fas fa-circle" size="10" style="font-size: large;"></i>
+                        <i class="fas fa-circle" size="14" style="font-size: x-large;"></i>
+                        <i class="fas fa-circle" size="20" style="font-size: xx-large;"></i>
+                        <i class="fas fa-circle" size="25" style="font-size: xxx-large;"></i>
+                    </div>
+                    <i class="fas fa-pencil-alt red color" style="color: red;"></i>
+                    <i class="fas fa-pencil-alt blue color" style="color:blue;"></i>
+                    <i class="fas fa-pencil-alt green color" style="color:green;"></i>
+                    <i class="fas fa-pencil-alt yellow color" style="color:yellow;"></i>
+                </div>
+            </div>
+
+
+            <!-- for eraser -->
+
+            <div class="thicknesseraser">
+                <i class="fas fa-eraser" size="2" style="font-size:x-small;"></i>
+                <i class="fas fa-eraser" size="4" style="font-size:small;"></i>
+                <i class="fas fa-eraser" size="6" style="font-size: medium;"></i>
+                <i class="fas fa-eraser" size="10" style="font-size: large;"></i>
+                <i class="fas fa-eraser" size="14" style="font-size: x-large;"></i>
+                <i class="fas fa-eraser" size="20" style="font-size: xx-large;"></i>
+                <i class="fas fa-eraser" size="25" style="font-size: xxx-large;"></i>
+            </div>
+            <div class="eraser action-btn"><i class="fas fa-eraser icon"></i></div>
+
+
+            <!-- Undo and Redo -->
+            <div class="undo action-btn">
+                <i class="fas fa-undo icon"></i>
+            </div>
+            <div class="do  action-btn">
+                <i class="fas fa-redo icon"></i></i>
+            </div>
+
+
+
+            <!-- Zoom in and Zoom out -->
+            <div class="zoomin action-btn">
+                <i class="fas fa-search-plus icon"></i>
+            </div>
+            <div class="zoomout action-btn">
+                <i class="fas fa-search-minus icon"></i>
+            </div>
+
+
+
+            <!-- Full Screen -->
+            <div class="fullscreen action-btn">
+                <i class="fas fa-expand icon"></i>
+            </div>
+
+
+
+            <!-- Image capture -->
+            <div class="download action-btn">
+                <i class="fas fa-download icon"></i>
+            </div>
+
+        </div>
+
+
+
+        <div class="board">
+            <canvas class="canvas-board" style="cursor: crosshair; z-index: 10; "></canvas>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+    <script src="zoom.js"></script>
+    <script src="redo_undo.js"></script>
+    <script src="fullscreen.js"></script>
+
+</body>
+
+</html>
